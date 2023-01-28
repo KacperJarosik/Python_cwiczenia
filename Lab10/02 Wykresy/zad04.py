@@ -1,0 +1,12 @@
+# 1. Rysowanie funkcji sin, cos, 2 cos, cos ( .. + 45) na jednym wykresie (2 okresy)
+import pylab as p
+x = p.arange(0.0, 4*p.pi, 0.01)
+y1 = p.cos(x)
+y2 = p.sin(x)
+y3 = 2*p.cos(x)
+y4 = p.cos(x+45)
+p.plot(x, y1, 'r')
+p.plot(x, y2, 'b')
+p.plot(x, y3, 'g')
+p.plot(x, y4, 'b--')
+p.show()

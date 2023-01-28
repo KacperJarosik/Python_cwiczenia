@@ -1,0 +1,1 @@
+# Podaj jako parametr wejsciowy dowolny wielomian, oraz granice x i narysuj wykres (eval)
