@@ -1,27 +1,13 @@
-# 3. Dokładamy dodatkowy parametr podający jakie liczby chcemy wybrać 
-#    suma(typ,a,b), gdzie typ jest typ to True lub False. 
-#    True oznacza liczby parzyste, False liczby nieparzyste.
-import zad01
+# 3. Konwersja stopni Celsjusza na Fahrenheita i odwrotnie (funkcja)
+#    convert_temp(type, value) gdzie type ma wartości małe lub duże 'F' or 'C'
+def convert_temp(type, value):
+    if type == 'F' or type == 'f':
+        return (value-32)/1.8
+    if type == 'C' or type == 'c':
+        return (value-32)/(1.8*(value * 9/5) + 32)
+x = (input('Podaj typ F/C jednostek temperatury\n'))
+y = float(input('Podaj ilosc\n'))
+print(convert_temp(x, y))
 
 
-def sum_even(typ, a, b):
-    suma = 0
-    if typ:
-        for i in range(a, b):
-            if zad01.is_even(i):
-                suma += i
-    else:
-        for i in range(a, b):
-            if not zad01.is_even(i):
-                suma += i
-    return suma
 
-
-if __name__ == '__main__':
-    typ = (input('Podaj typ parzyste - True, Nieparzyste - False\n'))
-    a = int(input('Podaj liczbe = '))
-    b = int(input('Podaj liczbe = '))
-    if typ == 'False':
-        print(sum_even(False, a, b))
-    else:
-        print(sum_even(True, a, b))

@@ -1,14 +1,18 @@
-# 6. Tabliczka mnożenia od 1..10 z tym, że liczby wyrównujemy w kolumnach do prawej strony (liczymy do 100)
-for i in range(1, 11):
-    for m in range(1, 11):
-        x = m * i
-        if x < 10:
-            print("", x, end="  ")
-        else:
-            if x < 100:
-                print("", x, end=" ")
-            else:
-                print(x, end=" ")
-        m += 1
-    print("\n")
-    i += 1
+# 6. Jaka to liczba? Komputer wybiera losowo liczbę z zakresu od 1 do 100.
+#    Gracz próbuje ją odgadnąć, a komputer go informuje,
+#    czy podana przez niego liczba jest:
+#    za duża, za mała, prawidłowa
+#    (na końcu podajemy ile liczb podaliśmy aby zgadnąć wylosowaną liczbę)
+import random
+
+if __name__ == '__main__':
+    x = random.randint(1, 100)
+    while True:
+        y = int(input('Zgadnij jaka wylosowana liczbe calkowita od 1 do 100\n'))
+        if y == x:
+            print('Brawo!!!\nZgadles prawidlowa liczbe')
+            break
+        if y < x:
+            print('Podana liczba jest za mala\n')
+        if y > x:
+            print('Podana liczba jest za duza\n')

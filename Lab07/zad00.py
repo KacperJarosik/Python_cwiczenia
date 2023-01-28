@@ -1,5 +1,5 @@
 # 0. (zadanie z ostatnich zajęć)
-# - nie kopiujemy pliku do danego katalogu, tylko próbujemy otworzyć plik z katalogu Lab08)
+# - nie kopiujemy pliku do danego katalogu, tylko próbujemy otworzyć plik z katalogu Lab06)
 # Mamy plik tekstowy z danymi medycznymi california1.txt
 # Należy podać ile jest w danym pliku linii,
 # Następnie ile jest kobiet i mężyczyzn

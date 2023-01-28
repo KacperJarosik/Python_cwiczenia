@@ -1,17 +1,15 @@
-# app04
-# Mamy przykładową zmienną data: data = ['jeden','dwa','trzy','cztery','pięć','sześć']
-data = ['jeden', 'dwa', 'trzy', 'cztery', 'pięć', 'sześć']
-# Wyświetl w kolejnych linijkach kolejną pozycję w postaci ciągu znaków np.
-# jeden
-#  j
-#  e
-#  d
-#  e
-#  n
-# ...
-a = int(0)
-while a < 6:
-    for letter in data[a]:
-        print (' ',letter)
-    print('...\n')
-    a+=1
+# 4. Na podstawie funkcji z zadania 3, tworzymy funkcję sum_all(a,b), 
+#    która liczy sumę liczb parzystych i nieparzystych razem. 
+#    Nie definiujemy od początku sumowania wszystkich liczb od początku tylko wykorzystujemy funkcję sum(typ,a,b)
+import zad03
+def sum_all(a,b):
+    suma= zad03.sum_even(True,a,b)
+    suma += zad03.sum_even(False,a,b)
+    return suma
+
+
+if __name__ == '__main__':
+    suma = 0
+    a = int(input('Podaj liczbe = '))
+    b = int(input('Podaj liczbe = '))
+    print(sum_all(a,b))

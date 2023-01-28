@@ -1,18 +1,13 @@
-# app01 
-# Podaj z klawiatury dwie liczby pod zmienne a oraz b (funkcja input()).
-# Następnie dodaj te dwie liczby i wyświetl wynik
-# Zakładamy, że podajemy liczby całkowite lub zmiennoprzecinkowe (nie sprawdzamy tego)
+# 1. Sprawdź czy podana liczba jest parzysta czy nieparzysta 
+#    (definiujemy funkcję is_even(a), która zwraca True lub False (typ bool))
 
-a = float(input('Podaj a = '))
-b = input('Podaj b = ')
-c = a + float(b)
-# wyniki
-print('wynik = ', c)
+def is_even(a):
 
+   if a % 2 == 0:
+      return True
+   else:
+      return False
 
-#if isinstance(c,(int,float)):
-#    print('typ int lub float')
-#else:
-#    print('inny typ')
-
-input('Press any key !')
+if __name__ == '__main__':
+   a = int(input('Podaj liczbe = '))
+   print(is_even(a))

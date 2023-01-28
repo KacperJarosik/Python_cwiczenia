@@ -1,15 +1,8 @@
-# 7. Tabliczka mnożenia z wykorzystaniem instrukcji while i ewentualnie if (liczymy do 100) - efekt jak w zdaniu zad06.py
-i =1
-while i <11:
-    for m in range(1, 11):
-        x = m * i
-        if x < 10:
-            print("", x, end="  ")
-        else:
-            if x < 100:
-                print("", x, end=" ")
-            else:
-                print(x, end=" ")
-        m += 1
-    print("\n")
-    i += 1
+# 7. Podajemy funkcję (na stałe w programie)
+# np. liniową (y=x-1), kwadratową (y=3*x**2+7*x-19), hiberbolę(y=1/x+5)
+# i sprawdzamy jej wartość w pkt. podanym z klawiatury 
+# (nie obsługujemy błędów nawet jeśli będzie dzielenie przez zero)
+if __name__ == '__main__':
+    print('Twoja funkcja to: y=x-1. Podaj x dla którego chcesz sprawdzić wartość ')
+    x = float(input())
+    print('Dla twojego x funkcja przjmuje wartosc: ', x-1)

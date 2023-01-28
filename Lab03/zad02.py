@@ -1,18 +1,21 @@
-# 2. Oblicz sumę liczb parzystych sum_even(a,b) z przedziału podanego jako parametry funkcji 
-#   (korzystamy z funkcji is_even(a) z zadania 1, która zwraca True lub False 
-#   - wykorzystujemy instrukcję import zad01 albo from zad01 import * ).
-#   W pliku zad01.py dodajemy w kodzie w odpowiednim miejscu sprawdzenie czy if __name__ == '__main__':
-import zad01
-
-def sum_even(a, b):
-    suma = 0
-    for i in range(a, b):
-        if zad01.is_even(i):
-            suma += i
-    return suma
-
-
-if __name__ == '__main__':
-    a = int(input('Podaj liczbe = '))
-    b = int(input('Podaj liczbe = '))
-    print(sum_even(a, b))
+# 2. Konwersja kilometry na mile i odwrotnie.
+#    W programie wybieramy w pętli aż podamy poprawny wybór np.
+#    'Podaj typ konwersji [km->mile]- 0, [mile->km]-1'.
+#    Na tej podstawie wykonujemy funkcje wcześniej zdefiniowaną
+#    km_mile(distance) lub mile_km(distance)
+def km_mile(distace):
+    return distace * 0.621371192
+def mile_km(distance):
+    return distance * 1.609344
+print('Wybierz opcje\n0 - [km->mile]\n1 - [mile->km]')
+x = int(input())
+if x == 0:
+    distance = float(input('podaj kilometry:\n'))
+    print('mile: ')
+    print(km_mile(distance))
+if x == 1:
+    distance = float(input('podaj mile:\n'))
+    print('kilometry: ')
+    print(mile_km(distance))
+if x != 1 and x !=0:
+    print('Poprawnie wybierz opcje')
