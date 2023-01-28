@@ -47,7 +47,7 @@
 - pylab (matplotlib): plot ; show
 - numpy: arange ; NaN
 ### Lab09
--sqlite3
+- sqlite3
 ### Lab10
 - re: match ; search ; fullmatch ; ignorecase ; ^ - + $ [] \d{}
 - class
