@@ -25,7 +25,7 @@
 i = int(100)
 while True:
     if i == 95 or i == 93:
-        i -=1
+        i -= 1
         continue
     print(i)
     i -= 1

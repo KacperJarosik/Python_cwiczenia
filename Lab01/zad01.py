@@ -9,10 +9,9 @@ c = a + float(b)
 # wyniki
 print('wynik = ', c)
 
-
-#if isinstance(c,(int,float)):
+# if isinstance(c,(int,float)):
 #    print('typ int lub float')
-#else:
+# else:
 #    print('inny typ')
 
 input('Press any key !')

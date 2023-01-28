@@ -7,4 +7,3 @@ while x <= n:
     print(x)
     x += 1
 print(vars())
-

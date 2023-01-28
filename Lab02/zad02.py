@@ -4,6 +4,7 @@
 #   W pliku zad01.py dodajemy w kodzie w odpowiednim miejscu sprawdzenie czy if __name__ == '__main__':
 import zad01
 
+
 def sum_even(a, b):
     suma = 0
     for i in range(a, b):

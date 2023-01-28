@@ -5,4 +5,4 @@
 if __name__ == '__main__':
     print('Twoja funkcja to: y=x-1. Podaj x dla którego chcesz sprawdzić wartość ')
     x = float(input())
-    print('Dla twojego x funkcja przjmuje wartosc: ', x-1)
+    print('Dla twojego x funkcja przjmuje wartosc: ', x - 1)

@@ -12,6 +12,6 @@ data = ['jeden', 'dwa', 'trzy', 'cztery', 'pięć', 'sześć']
 a = int(0)
 while a < 6:
     for letter in data[a]:
-        print (' ',letter)
+        print(' ', letter)
     print('...\n')
-    a+=1
+    a += 1

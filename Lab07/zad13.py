@@ -4,25 +4,26 @@
 # nowe pliki mają powstać w tym samym katalogu co wejściowy plik wskazany przez użytkownika (skorzystaj z funkcji os.path.dirname)
 # -zapisując linie do plików dodawaj do nich znak nowej linii
 
-#-------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------
 import os
-filename =input('Enter filename with web addresses to read: ')
+
+filename = input('Enter filename with web addresses to read: ')
 while not os.path.isfile(filename):
     print("File does not exist. Try again: ")
-    filename =input('Enter filename to read: ')
-webaddresses=[]
-with open(filename,'r') as file:
+    filename = input('Enter filename to read: ')
+webaddresses = []
+with open(filename, 'r') as file:
     for line in file:
-        webaddresses.append(line.replace("\n",''))
+        webaddresses.append(line.replace("\n", ''))
 dirname = os.path.dirname(filename)
-websPathPL = os.path.join(dirname,'webs_pl.txt')
-websPathOther = os.path.join(dirname,'webs_other.txt')
-filePL = open(websPathPL,'w')
-fileOther = open(websPathOther,'w')
+websPathPL = os.path.join(dirname, 'webs_pl.txt')
+websPathOther = os.path.join(dirname, 'webs_other.txt')
+filePL = open(websPathPL, 'w')
+fileOther = open(websPathOther, 'w')
 for line in webaddresses:
     if line.endswith('.pl'):
-        filePL.write(line+"\n")
+        filePL.write(line + "\n")
     else:
-        fileOther.write(line+"\n")
+        fileOther.write(line + "\n")
 filePL.close()
 fileOther.close()

@@ -2,7 +2,6 @@
 #   rok-miesiąc-dzień oraz godzina:minuty:sekundy
 #   w danym momencie z wykorzystaniem najnowszego formatowania danych f-string (f').
 import datetime
-import time
 
 if __name__ == '__main__':
     now = datetime.datetime.now()
