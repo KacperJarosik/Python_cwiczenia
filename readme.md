@@ -17,7 +17,7 @@
 - functions
 - math: sqrt
 ### Lab03
--time: time
+- time: time
 ### Lab04
 - list variable addresses
 - list: append ; clear ; sort ; count ; index ; pop ; extend ; insert ; join ; split ; set ; difference ; intersection ; union ; len
@@ -32,11 +32,11 @@
 - calendar: calendar
 - datatime: datatime ; today
 ### Lab05
--sum ; min ; max
--statistics: mean ; median ; mode ; stdev ; variance
--datatime: print - format
--sys: exit
--calendar: isleap ; monthrange
+- sum ; min ; max
+- statistics: mean ; median ; mode ; stdev ; variance
+- datatime: print - format
+- sys: exit
+- calendar: isleap ; monthrange
 ### Lab06
 - file operations: open(a,w,r) ; close ; readline ;readlines ; write
 ### Lab07
@@ -52,4 +52,4 @@
 - re: match ; search ; fullmatch ; ignorecase ; ^ - + $ [] \d{}
 - class
 ### Lab11
--tkinter
+- tkinter
